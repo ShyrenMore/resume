@@ -61,6 +61,7 @@
 \usepackage{array}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \usepackage{anyfontsize}
+\usepackage{xcolor}
 
 %%%% Set Margins
 \usepackage[margin=1cm, top=1.5cm]{geometry}
@@ -89,6 +90,9 @@ ItalicFont=SourceSansPro-RegularIt.otf
 
 %%%% Set Secondary Color
 \definecolor{UI_blue}{RGB}{32, 64, 151}
+
+% link color
+\definecolor{LINK_blue}{RGB}{29, 58, 136}
 
 %%%% Define New Commands
 \usepackage[style=nature, maxbibnames=3]{biblatex}
@@ -145,12 +149,16 @@ ItalicFont=SourceSansPro-RegularIt.otf
 %%%%%%% --------------------------------------------------------------------------------------
 %%%%%%%  HEADER
 %%%%%%% --------------------------------------------------------------------------------------
+% #204097
 \begin{center}
     \begin{minipage}[b]{0.24\textwidth}
             \centering
-             Github/ \href{mailto:shyren.more30@gmail.com}{ShyrenMore} \\
-             Codechef/ \href{https://www.codechef.com/users/shyren_more}{shyren\textunderscore more} \\
+            \begin{flushleft}
+             
+             \href{https://github.com/ShyrenMore}{Github / ShyrenMore} \\
+             \href{https://www.codechef.com/users/shyren_more}{Codechef / shyren\textunderscore more} \\
             % portfolio link to be added
+            \end{flushleft}
     \end{minipage}% 
     \begin{minipage}[b]{0.5\textwidth}
             \centering
@@ -160,9 +168,11 @@ ItalicFont=SourceSansPro-RegularIt.otf
     \end{minipage}% 
     \begin{minipage}[b]{0.24\textwidth}
             \centering
+            \begin{flushright}
             % \flushright \large  Willing to Relocate
             { \href{https://www.linkedin.com/in/shyrenmore/}{linkedin.com/in/shyrenmore} } \\
             \href{mailto:shyren.more30@gmail.com}{shyren.more30@gmail.com}
+            \end{flushright}
     \end{minipage}   
     
 \vspace{-0.15cm} 
@@ -180,6 +190,7 @@ ItalicFont=SourceSansPro-RegularIt.otf
 %%%%%%% --------------------------------------------------------------------------------------
 \section{Education }
 \subsection*{Bachelor of Engineering in Computer Engineering, {\normalsize \normalfont Thadomal Shahani Engineering College, CGPA: \textbf{9.69}/10.00} \hfill 2019 --- 2023} 
+% \subtext{\small{Relevant Coursework: Object Oriented Programming, Data structures, Analysis of Algorithms, Relational Databases} }
 \vspace{0.1cm}
 \subsection*{Higher Secondary Certificate (HSC), {\normalsize \normalfont S.V.P Jr College of Science \& Commerce, MHT-CET perecntile: 95.02/100.00} \hfill 2017 --- 2019} 
 \vspace{0.2cm}
@@ -197,6 +208,17 @@ ItalicFont=SourceSansPro-RegularIt.otf
         % \item Built a custom menu single handedly using HTML5, CSS3, XML and JSP and improved the performance of existing application by tuning the PL/SQL scripts by 20\% and reduced on-migration time.
         
 
+%%%%%%% ----------------------------------- Role 5 ----------------------------------- %%%%%%%
+\subsection*{Front-end Developer {\normalsize\normalfont (Freelance)} \hfill Sept 2021 --- Present} 
+\subtext{VPSie.inc, Greater New York, USA} 
+    \begin{zitemize}
+        \item Collaborated in implementing a secured E-KYC \href{https://kyc.itpay.io/info/}{\normalsize\normalfont \textit{(visit web-app)}} system based on face recognition and OCR Detection for extracting card data and verifying users based on photo present in document with recorded video.
+        \item Designed \& developed stepper form that included a custom drop zone for uploading documents, a reactive OTP input field and capturing video via utilizing \textbf{MediaRecorder API} of JavaScript.
+        \item Built auth pages with client-side validation \& integrated with Google ReCaptcha v3.
+        \item Implemented custom charts on admin interface to represent analytical data with \textbf{Chart.js} package.
+    \end{zitemize}
+
+
 %%%%%%% ----------------------------------- Role 4 ----------------------------------- %%%%%%%
 \subsection*{Web Developer {\normalsize\normalfont (Internship)} \hfill June 2021 --- Sept 2021} 
 \subtext{Cyboard School Pvt Ltd, Gurgaon, India} 
@@ -207,14 +229,6 @@ ItalicFont=SourceSansPro-RegularIt.otf
         \item Integrated multiple website enquiry forms with \textbf{Bitrix24 CRM} using PHP that made tracking leads easier.
     \end{zitemize}
 
-
-%%%%%%% ----------------------------------- Role 5 ----------------------------------- %%%%%%%
-\subsection*{Front-end Developer {\normalsize\normalfont (Freelance)} \hfill Aug 2021 - Present} 
-\subtext{VPSie.inc, Greater New York, USA} 
-    \begin{zitemize}
-        \item A web-application for verifying KYC that incorporates ML for recognizing \& matching faces of user captured by 10 sec video with documents uploaded like Aadhar card, PAN card, electricity bill. 
-        \item Designed \& developed stepper form that included a custom drop zone for uploading documents, a reactive OTP input field and capturing video via utilizing MediaRecorder API of JavaScript.
-    \end{zitemize}
 
 
 
@@ -231,7 +245,7 @@ ItalicFont=SourceSansPro-RegularIt.otf
 
 
 %%%%%%% ----------------------------------- Role 1 ----------------------------------- %%%%%%%
-\subsection*{Sentiment analytics {\normalsize\normalfont (React.js in TypeScript, Python)} \hfill {\href{https://github.com/DevelopersLeague/Brandlytics}{Code} }} 
+\subsection*{Sentiment analytics {\normalsize\normalfont (Jupyter Notebook, Python)} \hfill {\href{https://github.com/DevelopersLeague/Brandlytics}{Code} }} 
     \begin{zitemize}
         \item Sentiment analysis tool that helps to visualise the sentiment(Positive/Negative) in form of charts throughout the week for last 7 days. 
         \item Developed and integrated the logistic regression model with NLP that has an accuracy of \textbf{87\%} 
@@ -243,8 +257,8 @@ ItalicFont=SourceSansPro-RegularIt.otf
     \begin{zitemize}
         \item EverHustle is an open-sourced web application that aims to help boost productivity by various methods. 
         \item Designed and developed responsive notes, reminders, landing page \& auth pages.
-        \item Improved user experience by using caching the data using react-query, consumed REST API \& retrieved info
-        from third party Algolia API.
+        \item Improved user experience by using caching the data using react-query, consumed REST API \& retrieved data
+        from third party API.
         \item Prepared technical documentation to describe the product in detail
         \item Has 15+ users as of 20/07/2021.
     \end{zitemize}
