@@ -42,6 +42,7 @@
 %%%%%%% --------------------------------------------------------------------------------------
 
 \usepackage{latexsym}
+\usepackage{fontawesome5}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
  \usepackage{marvosym}
@@ -64,7 +65,7 @@
 \usepackage{xcolor}
 
 %%%% Set Margins
-\usepackage[margin=1cm, top=1.0cm]{geometry}
+\usepackage[margin=1cm, top=1cm]{geometry}
 
 %%%% Set Fonts
 \setmainfont[
@@ -119,8 +120,8 @@ ItalicFont=SourceSansPro-RegularIt.otf
 \newcommand{\subtext}[1]{
 #1\par\vspace{-0.2cm}}
 
-% \newcommand{\subtextit}[1]{\vspace{0.15cm}
-% \textit{ #1 \vspace{-0.2cm}} }
+\newcommand{\subtextit}[1]{\vspace{0.15cm}
+\textit{ #1 \vspace{-0.2cm}} }
 
 %%%% Set Item Spacing
 \setlist[itemize]{align=parleft,left=0pt..1em}
@@ -137,7 +138,7 @@ ItalicFont=SourceSansPro-RegularIt.otf
 
 %%%% Set Subsection formatting
 \titleformat{\subsection}{\vspace{-0.1cm} 
-\bfseries \fontsize{12pt}{2cm}}{}{0em}{}[\vspace{-0.2cm}]
+\bfseries \fontsize{13pt}{2cm}}{}{0em}{}[\vspace{-0.2cm}]
 
 %%%%%%% --------------------------------------------------------------------------------------
 %%%%%%% --------------------------------------------------------------------------------------
@@ -158,10 +159,13 @@ ItalicFont=SourceSansPro-RegularIt.otf
     {\Huge Shyren More} \\ 
     \end{minipage}%
 
-    GitHub / \href{https://github.com/ShyrenMore}{ ShyrenMore} | 
-    CodeChef / \href{https://www.codechef.com/users/shyren_more}{shyren\textunderscore more}  \\
-    \vspace{0.1cm}
-    LinkedIn / \href{https://linkedin.com/in/shyrenmore/}{ shyrenmore} | Leetcode / \href{https://leetcode.com/shyren_more/}{shyren\textunderscore more}      \\
+    \faLinkedin \href{https://linkedin.com/in/shyrenmore/}{\raisebox{-0.2\height}\ LinkedIn} ~ 
+    \faLaptopCode \href{https://leetcode.com/shyren_more/}{\raisebox{-0.2\height}\ Leetcode}  ~ 
+    \faGithub \href{https://github.com/ShyrenMore}{\raisebox{-0.2\height}\ GitHub}  ~ 
+    \faCreativeCommons 
+    \href{https://www.codechef.com/users/shyren_more}{\raisebox{-0.2\height}\ CodeChef} ~
+    
+     
     \vspace{0.1cm}
     E-mail / \href{mailto:shyren.more30@gmail.com}{shyren.more30@gmail.com} | Phone / \href{tel:8169622410}{+91 81696 22410}
     
@@ -205,7 +209,7 @@ ItalicFont=SourceSansPro-RegularIt.otf
 %%%%%%%  EDUCATION
 %%%%%%% --------------------------------------------------------------------------------------
 \section{Education }
-\subsection*{Bachelor of Engineering in Computer Engineering, {\normalsize \normalfont Thadomal Shahani Engineering College, Mumbai, 2019-2023} \hfill CGPA: 9.63/10.00} 
+\subsection*{B.E in Computer Engineering, {\normalsize \normalfont Thadomal Shahani Engineering College, Mumbai, July 2019 - June 2023} \hfill CGPA: 9.63/10.00} 
 % \subtext{{Relevant Coursework: Object Oriented Programming, Data structures, Analysis of Algorithms, Relational Databases} }
 \vspace{0.1cm}
 \subsection*{Higher Secondary Certificate (HSC), {\normalsize \normalfont S.V.P Jr College of Science \& Commerce, Mumbai, 2019} \hfill Per: 77.85\%} 
@@ -280,7 +284,7 @@ ItalicFont=SourceSansPro-RegularIt.otf
         \item Formulated \textbf{smart contracts} using \textbf{Solidity} collaboratively
     \end{zitemize}
 
-\vspace{0.1cm}
+% \vspace{0.1cm}
 
 \subsection*{EverHustle {\normalsize\normalfont | (Productivity Tool) | ReactJS, Axios} |  {\href{https://github.com/DevelopersLeague/EverHustle-FrontEnd}{Code} }| {\href{https://everhustle.netlify.app/}{Demo} }} 
     \begin{zitemize}
@@ -323,7 +327,7 @@ ItalicFont=SourceSansPro-RegularIt.otf
 \textbf{Key Modules}: Data structures, SDLC, Operating System, Relational Databases, Object Oriented Programming (OOP)
 % \textcolor{WHITE}{System design, problem-solving, analytical skill} \\
 % \end{tabular}
-\vspace{-0.2cm}
+% \vspace{0.1cm}
 
 
 
@@ -332,20 +336,25 @@ ItalicFont=SourceSansPro-RegularIt.otf
 %%%%%%% --------------------------------------------------------------------------------------
 \section{Achievements}
 \begin{zitemize}
-        \item \textbf{4-star} on CodeChef: Max rating of 1901
-            
-        \item Stood \textbf{3rd} in Project Expo organised by TSEC E-cell 
-                
-        \item Shortlisted in Top 12 teams among  50+ teams in TSEC Codestorm hackathon 
-                
-        \item \textbf{2nd} Runner up among 81 shortlisted teams in TSEC HACKS - 21 hackathon 
-                
-        % \item  \textbf{Institution rank 5} out of 180+ active participants on CodeChef  \href{
+    
+    \item Stood \textbf{3rd} in Project Expo organised by TSEC E-cell 
+    \item \textbf{2nd} Runner up among 81 shortlisted teams in TSEC HACKS - 21 hackathon 
+    \item  CodeChef COOK133C contest: Ranked \textbf{585/6953} \href{https://www.codechef.com/rankings/COOK133C?itemsPerPage=100&order=asc&page=70&search=shyren_more&sortBy=rank}{(\textit{view standings})}
+    \item  CodeChef LTIME97C contest: Ranked \textbf{943/9576} \href{https://www.codechef.com/rankings/LTIME97C?itemsPerPage=100&order=asc&page=70&search=shyren_more&sortBy=rank}{(\textit{view standings})}
+    \item Cleared Hackerrank Skills Certification Test:         
+        \href{https://www.hackerrank.com/certificates/69fa323a6b13}{Basic} |
+        \href{https://www.hackerrank.com/certificates/7be43b2d0925}{Intermediate} 
+     
+    
+    \item \textbf{4-star} on CodeChef: Max rating of 1901 (Old Rating Graph)
+    
+    \item Shortlisted in Top 12 teams among  50+ teams in TSEC Codestorm hackathon 
+    
+    
+    % \item  \textbf{Institution rank 5} out of 180+ active participants on CodeChef  \href{
         % https://www.codechef.com/ratings/all?filterBy=Institution\%3DThadomal\%20Shahani\%20Engineering\%20College&itemsPerPage=15&order=asc&page=1&sortBy=global_rank
         % }{(\textit{view standings})}
-        \item  CodeChef COOK133C contest: Ranked \textbf{585/6953} \href{https://www.codechef.com/rankings/COOK133C?itemsPerPage=100&order=asc&page=70&search=shyren_more&sortBy=rank}{(\textit{view standings})}
-        \item  CodeChef LTIME97C contest: Ranked \textbf{943/9576} \href{https://www.codechef.com/rankings/LTIME97C?itemsPerPage=100&order=asc&page=70&search=shyren_more&sortBy=rank}{(\textit{view standings})}
-        
+    
         % \vspace{0.5cm}    
     \end{zitemize}
 
