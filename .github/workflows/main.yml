@@ -19,6 +19,7 @@ on:
         - "index.html"
         - "resume.tex"
         - "Publications.bib"
+    workflow_dispatch: # Allows manual execution of workflow
 
 jobs:
     build_latex:
