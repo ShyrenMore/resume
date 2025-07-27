@@ -118,12 +118,16 @@ ItalicFont=SourceSansPro-RegularIt.otf
 \color{Text} \scshape \raggedright \Large 
 }{}{0em}{}[\vspace{-10pt} \hrulefill \vspace{-6pt}]
 
+% \titlespacing*{\section}{0pt}{6pt plus 1pt minus 1pt}{*}
+
+
+
 %%%% Set Subtext Formatting
 \newcommand{\subtext}[1]{
 #1\par\vspace{-0.2cm}}
 
-\newcommand{\subtextit}[1]{\vspace{0.15cm}
-\textit{ #1 \vspace{-0.2cm}} }
+% \newcommand{\subtextit}[1]{\vspace{0.15cm}
+% \textit{ #1 \vspace{-0.2cm}} }
 
 %%%% Set Item Spacing
 \setlist[itemize]{align=parleft,left=0pt..1em}
@@ -132,7 +136,6 @@ ItalicFont=SourceSansPro-RegularIt.otf
 \newenvironment{zitemize}{
 \begin{itemize}\itemsep0pt \parskip0pt \parsep1pt}
 {\end{itemize}\vspace{-0.5cm}}
-
 
 %%%% Define Skills Bold Formatting
 \newcommand{\hskills}[1]{
@@ -149,104 +152,86 @@ ItalicFont=SourceSansPro-RegularIt.otf
 %%%%%%% --------------------------------------------------------------------------------------
 
 
+
+
 \begin{document}
 %%%%%%% --------------------------------------------------------------------------------------
 %%%%%%%  HEADER
 %%%%%%% --------------------------------------------------------------------------------------
 % #204097
 
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  HEADER
+%%%%%%% --------------------------------------------------------------------------------------
+
 \begin{flushleft}
-
-    \begin{minipage}[b]{0.5\textwidth}
-    {\Huge Shyren More} \\ 
-    \end{minipage}%
-
-    \faLinkedin \href{https://linkedin.com/in/shyrenmore/}{\raisebox{-0.2\height}\ LinkedIn} ~ 
-    \faGithub \href{https://github.com/ShyrenMore}
-    {\raisebox{-0.2\height}\ GitHub} ~ 
-    E-mail / \href{mailto:shyren.more30@gmail.com}{shyren.more30@gmail.com} | Phone / \href{tel:8169622410}{+91 81696 22410} | Pune
-  
-    % \href{https://www.codechef.com/users/shyren_more}{\raisebox{-0.2\height}\ CodeChef} ~
-
-    {Data Structures \& Algorithms Track Record}:  
-     \href{https://leetcode.com/shyren_more/}{Leetcode} |
-     \href{https://takeuforward.org/plus/profile/shyren_more}{TUF} | 
-     \href{https://www.geeksforgeeks.org/user/shyrenmore30/?utm_source=geeksforgeeks&utm_medium=colleges&utm_campaign=users}{GeeksForGeeks} ~
+    {\Huge \bfseries Shyren More} \\
     
+    \vspace{2pt}
+    
+    \faLinkedin\, \href{https://linkedin.com/in/shyrenmore/}{linkedin.com/in/shyrenmore} \hspace{1em}
+    \faGithub\, \href{https://github.com/ShyrenMore}{github.com/ShyrenMore} \hspace{1em}
+    \faEnvelope\, \href{mailto:shyren.more30@gmail.com}{shyren.more30@gmail.com} \hspace{1em}
+    \faPhone\, \href{tel:+918169622410}{+91 81696 22410}
+
+    \vspace{4pt}
+
+    \textbf{Data structure and algorithms profiles:} 
+    \href{https://leetcode.com/shyren_more/}{LeetCode} | 
+    \href{https://takeuforward.org/plus/profile/shyren_more}{TUF} | 
+    \href{https://www.geeksforgeeks.org/user/shyrenmore30/}{GeeksForGeeks}
 \end{flushleft}
-% \begin{center}
-%     \begin{minipage}[b]{0.24\textwidth}
-%             \centering
-%             \begin{flushleft}
-             
-%              \href{https://github.com/ShyrenMore}{Github / ShyrenMore} \\
-%              \href{https://www.codechef.com/users/shyren_more}{Codechef / shyren\textunderscore more} \\
-%             % portfolio link to be added
-%             \end{flushleft}
-%     \end{minipage}% 
-%     \begin{minipage}[b]{0.5\textwidth}
-%             \centering
-%             {\Huge Shyren More} \\ %
-%             % \vspace{0.1cm}
-             
-%     \end{minipage}% 
-%     \begin{minipage}[b]{0.24\textwidth}
-%             \centering
-%             \begin{flushright}
-%             % \flushright \large  Willing to Relocate
-%             { \href{https://www.linkedin.com/in/shyrenmore/}{linkedin.com/in/shyrenmore} } \\
-%             \href{mailto:shyren.more30@gmail.com}{shyren.more30@gmail.com} \\ 
-%             Phone: +91 8169622410
-%             \end{flushright}
-%     \end{minipage}   
-    
-% \vspace{-0.15cm} 
-% % {\color{UI_blue} \hrulefill}
-% \end{center}
-% \begin{minipage}[b]{0.25\textwidth} \textbullet \hspace{0.1cm} Keyword 1 \end{minipage}\begin{minipage}[b]{0.25\textwidth} \textbullet \hspace{0.1cm} Keyword 2  \end{minipage}\begin{minipage}[b]{0.25\textwidth} \textbullet \hspace{0.1cm} Keyword 3 \end{minipage}\begin{minipage}[b]{0.25\textwidth}  \textbullet \hspace{0.1cm} Keyword 4 \end{minipage}
 
-% \hskills{Impact:} A funded research proposals, B technical reports,  \& C scientific publications with X+ downloads \& Y+ citations, Z awards  %% This can be customized, but I feel this impact statement makes people want to read more.
-% \vspace{-0.2cm}
+
 
 %%%%%%% --------------------------------------------------------------------------------------
 %%%%%%%  WORK EXPERIENCE
 %%%%%%% --------------------------------------------------------------------------------------
+\vspace{-18pt}
 \section{Work Experience}
 
-%%% ----- Best way to write items (Credit - ResumePuppy.com)
-        % \item Developed AngularJS microservice to automate parsing of ~300 emails/day for efficient service request categorization using Linux MBox & Perl scripts; reduced manual re-allocation by 87%.
-        % \item Led the development, build and bring-up execution of Lyft’s first functional AV platform from start to finish; established fleet-grade product reliability over 5 months.
-        % \item Enhanced user experience by fine-tuning stored procedures & SQL queries for efficient data retrieval from ~4M records accessed by 5000+ users worldwide.
-        % \item Built a custom menu single handedly using HTML5, CSS3, XML and JSP and improved the performance of existing application by tuning the PL/SQL scripts by 20\% and reduced on-migration time.
+\subsection*{Barclays Bank PLC \hfill Pune, Maharashtra, India}
 
-\subsection*{Software Engineer (SDE) at Barclays | Next-gen consumer banking \hfill 07/2023 - Present} 
-\subtext{Pune, Maharashtra, India {\normalsize\normalfont (On-site, full-time) }} 
-    \begin{zitemize}
-        \item Co-created a \textbf{real-time payments authorization module for the \href{https://www.amazon.co.uk/dp/B0BH98211K}{Amazon Barclaycard}}, achieving 70 transactions per second with a 60 ms P95 response time, leveraging Java, Spring Boot, and Amazon Web Services(AWS) for scalability and reliability.
-        \item Engineered an optimized \textbf{FCA-compliant Persistent Debt} logic on the next-gen credit card platform by restricting evaluations to eligible accounts, resulting in 85\% memory and processing savings over the legacy system utilizing AWS Lambda functions and ECS.
-        \item Implemented and maintained CloudWatch alarms and metrics for every feature to conduct failure monitoring, with comprehensive technical documentation to support transparency and ongoing maintenance.
-        \item Maintained high code quality through Test‑Driven Development(TDD) and Behavior-Driven Development(BDD) practices using JUnit and Mockito, ensuring robust, testable, and business-aligned implementations.
-        % \item Streamlined development workflow by integrating Continuous Integration and Continuous Deployment (CI/CD) pipelines and adhering to SDLC and Agile practices, enabling faster, reliable, and maintainable releases.
+\textbf{Software Engineer 2 (BA4)} \hfill \textit{03/2025 - Present} \\
+\vspace{-5pt}
+\begin{zitemize}
+    \item Co-created a \textbf{real-time payments authorization module for the \href{https://www.amazon.co.uk/dp/B0BH98211K}{Amazon Barclaycard}}, achieving 70 transactions per second with a 60 ms P95 response time, leveraging Java, Spring Boot, and Amazon Web Services (AWS) for scalability and reliability.
+    \item Engineered an optimized \textbf{FCA-compliant Persistent Debt} logic on the next-gen credit card platform by restricting evaluations to eligible accounts, resulting in 85\% memory and processing savings over the legacy system utilizing AWS Lambda functions and ECS.
+    \item Architected and developed an asynchronous account onboarding feature using SAGA orchestration and the transactional outbox pattern, enabling seamless integration across Treatments, Payments, and Transaction Processing domains.
+\end{zitemize}
 
-    \end{zitemize}
+\vspace{8pt} 
 
-%%%%%%% ----------------------------------- Role 5 ----------------------------------- %%%%%%%
-\subsection*{Developer at VPSie.inc \hfill 06/2022 - 07/2022} 
-\subtext{Greater New York, USA {\normalsize\normalfont (Remote Internship) }} 
-    \begin{zitemize}
-        \item Engineered a secure \textbf{E-KYC system using face recognition} and optical character recognition(OCR) for identity card data extraction and user verification through recorded video and extracted identity card photo with a team of 4 developers.
-        \item Delivered a 4-step client-side form with a custom drop zone, reactive OTP input, and video capture via MediaRecorder API.
-    \end{zitemize}
+\textbf{Software Developer (BA3)} \hfill \textit{07/2023 - 02/2025} \\
+\vspace{-5pt}
+\begin{zitemize}
+    % \item Implemented a feature for restricting credit card payments based on specific account status in Payments Domain, delivered 100\% of the feature suite by implementing test cases, monitoring, observability, alarms and failure handling along with main feature.
+    \item Executed the migration of microservice components to Java17 and Spring Boot 3, enchancing system performance and maintainability.
+    \item Created alarms, metrics, dashboards and logging framework using AWS CloudWatch for effective production monitoring.
+    \item Achieved 100\% test coverage for new code using Junit, Mockito \& adopted BDD techniques to create clear feature scenarios, enhancing collaboration with developers, analysts and QA teams.
+\end{zitemize}
+
+
+\subsection*{VPSie Inc. \hfill New York, United States (Remote)}
+
+\textbf{Software Developer Intern} \hfill \textit{06/2022‑ 07/2022} \\
+\vspace{-5pt}
+\begin{zitemize}
+    \item Engineered a secure \textbf{E-KYC system using face recognition} and optical character recognition (OCR) for identity card data extraction and user verification through recorded video and extracted identity card photo with a team of 4 developers.
+    \item Delivered a 4-step client-side form with a custom drop zone, reactive OTP input, and video capture via MediaRecorder API.
+\end{zitemize}
 
 
 %%%%%%% ----------------------------------- Role 4 ----------------------------------- %%%%%%%
-\subsection*{Web Developer at Cyboard School Pvt Ltd \hfill 06/2021 - 09/2021} 
-\subtext{Gurgaon, India {\normalsize\normalfont (Remote Internship) }}
-    \begin{zitemize}
-        \item Designed a responsive web UI with a performance score of 90+ on Google Lighthouse using HTML, CSS, Bootstrap, JS, and packages like AOS, sweet-alert, and Glightbox. 
-        \item Optimized homepage performance score on Desktop by 200\% using speed optimization strategies like lazy loading, pre-fetching/pre-loading, caching that helped improve page ranking on search engines.
-        \item Streamlined lead tracking by integrating website enquiry forms with Bitrix24 CRM using PHP, improving response time.
-    \end{zitemize}
+\subsection*{Cyboard School (EdTech Startup) \hfill Delhi, India (Remote)}
+
+\textbf{Software Developer Intern} \hfill \textit{06/2021‑ 09/2021} \\
+\vspace{-5pt}
+\begin{zitemize}
+    \item Designed a responsive web UI with a performance score of 90+ on Google Lighthouse using HTML, CSS, Bootstrap, JS, and packages like AOS, sweet-alert, and Glightbox. 
+    \item Optimized homepage performance score on Desktop by 200\% using speed optimization strategies like lazy loading, pre-fetching/pre-loading, caching that helped improve page ranking on search engines.
+\end{zitemize}
 
 
 
@@ -254,37 +239,35 @@ ItalicFont=SourceSansPro-RegularIt.otf
 %%%%%%% --------------------------------------------------------------------------------------
 %%%%%%%  EDUCATION
 %%%%%%% --------------------------------------------------------------------------------------
-\section{Education }
-\subsection*{B.E in Computer Engineering, {\normalsize \normalfont Thadomal Shahani Engineering College, Mumbai, 07/2019 - 06/2023} \hfill CGPA: 9.49/10.00} 
-\subtext{{Relevant Coursework: Object Oriented Programming, Data structures, Analysis of Algorithms, Relational Databases} }
+\vspace{-5pt}
+\section*{Education}
 
+\textbf{Thadomal Shahani Engineering College} \hfill Mumbai, India \\
+\textit{Bachelor of Engineering in Computer Engineering (CGPA: 9.49/10)} \hfill \textit{2019 - 2023}
 
 %%%%%%% --------------------------------------------------------------------------------------
 %%%%%%%  ACADEMIC PROJECTS
 %%%%%%% --------------------------------------------------------------------------------------
-\section{Projects} 
+\vspace{-10pt}
+\section*{Projects} 
 
-\subsection*{Etherdocs | Final year graduation project \hfill {\href{https://github.com/DevelopersLeague/EtherDocs/blob/main/Readme.md}{Documentation}} | {\href{https://youtu.be/B_44aJ9hh6U?si=dGItpsQ3AEo_eIxk}{Demo video} }
-}
+\subsection*{Etherdocs | Final year graduation project \hfill {\href{https://github.com/DevelopersLeague/EtherDocs/blob/main/Readme.md}{Documentation}} | {\href{https://youtu.be/B_44aJ9hh6U?si=dGItpsQ3AEo_eIxk}{Demo video}}}
 \subtext{{\normalsize\normalfont Academic Document Verification Decentralised Application}}
-    \begin{zitemize}
-        \item Developed a blockchain-based decentralized application (DApp) for secure academic document verification, leveraging Ethereum, smart contracts in Solidity, and IPFS for document storage, achieving 100\% immutability and tamper-proof records.
-        \item Led a team of 3 students in designing and building the user interface using React.js, ensuring seamless interaction with blockchain elements.
-    \end{zitemize}
-
-% \vspace{0.1cm}
+\begin{zitemize}
+    \item Developed a blockchain-based decentralized application (DApp) for secure academic document verification, leveraging Ethereum, smart contracts in Solidity, and IPFS for document storage, achieving 100\% immutability and tamper-proof records.
+\end{zitemize}
 
 
 %%%%%%% --------------------------------------------------------------------------------------
 %%%%%%%  SKILLS
 %%%%%%% --------------------------------------------------------------------------------------
 \section{Skills}
-% \begin{tabular}{p{7em} p{48em}}
-\textbf{Programming Languages/Frameworks}: Java, Spring Boot, AWS SDK, tools and services, Junit, Mockito, Cucumber, ReactJS 
 
-\textbf{AWS Tools and Services}: AWS SDK, Lambda, Kinesis Data streams, DynamoDB, Simple Queue Service(SQS), IAM Roles and Policies, Glue Schema, CloudWatch metrics and alarms, Systems Manager, ECS, Service Catalog, Cloudformation Template, OpsCenter
+\hskills{Programming Languages, frameworks \& libraries}: Java, Spring Boot, AWS Java SDK, Junit, Mockito, Cucumber, ReactJS
 
-\textbf{Key Modules}: Java Design Patterns, Microservices, Data Structures, Rest APIs, Object-Oriented Design, Event Driven Design
+\hskills{AWS tools and services}: AWS SDK, Lambda, Kinesis Data streams (alternative to Kafka), DynamoDB (NoSQL Database), Simple Queue Service (SQS), IAM Roles and Policies, Glue Schema, S3, CloudWatch metrics and alarms, Systems Manager, ECS, Service Catalog, CloudFormation Templates (alternative to Terraform), OpsCenter
+
+\hskills{Key modules}: Java Design Patterns, Microservices, Data Structures, Rest APIs, Object-Oriented Design, Event Driven Design
      
 % \textcolor{WHITE}{System design, problem-solving, analytical skill} \\
 % \end{tabular}
@@ -293,6 +276,7 @@ ItalicFont=SourceSansPro-RegularIt.otf
 %%%%%%% --------------------------------------------------------------------------------------
 %%%%%%%  AWARDS & HONORS
 %%%%%%% --------------------------------------------------------------------------------------
+\vspace{-10pt}
 \section{Accomplishments}
 \begin{zitemize}
     \item \href{https://www.credly.com/badges/c7ea1aea-cdc3-41c5-8fa0-f3e17866f8ff/public_url}{AWS Certified Cloud Practitioner}, Amazon Web Services (AWS) (Jan 2025)
