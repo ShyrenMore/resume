@@ -19,7 +19,7 @@ on:
         - "index.html"
         - "resume.tex"
         - "Publications.bib"
-    workflow_dispatch: # Allows manual execution of workflow
+  workflow_dispatch: # Allows manual execution of workflow
 
 jobs:
     build_latex:
@@ -28,17 +28,15 @@ jobs:
             image: danteev/texlive:latest
         steps:
             - name: Checkout
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
               with:
                   persist-credentials: false
 
             - name: Compile LaTeX document
-              uses: xu-cheng/latex-action@v2
+              uses: xu-cheng/latex-action@v3
               with:
                   root_file: resume.tex
                   latexmk_use_xelatex: true
-
-
 
             - name: Post Processing
               run: |
