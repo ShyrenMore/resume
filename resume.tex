@@ -45,7 +45,7 @@
 \usepackage{fontawesome5}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
- \usepackage{marvosym}
+\usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage[hidelinks]{hyperref}
@@ -71,10 +71,11 @@
 
 %%%% Set Fonts
 \setmainfont[
-BoldFont=SourceSansPro-Semibold.otf, %SourceSansPro-Bold.otf
+Path=./,
+BoldFont=SourceSansPro-Semibold.otf, 
 ItalicFont=SourceSansPro-RegularIt.otf
 ]{SourceSansPro-Regular.otf}
-\setsansfont{SourceSansPro-Semibold.otf}
+\setsansfont[Path=./]{SourceSansPro-Semibold.otf}
 
 %%%% Set Page
 \pagestyle{fancy}
